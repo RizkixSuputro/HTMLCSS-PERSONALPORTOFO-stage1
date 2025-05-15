@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav>
@@ -22,7 +23,13 @@
 
     <section class="first-content-page">
       <div class="first-content-page">
-        <div class="text-content">
+        <div
+          class="text-content"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1500"
+        >
           <h2>Hi There!</h2>
           <h3>I'm <span>Rizki Suputro</span>,</h3>
           <p>As Web Designer & Software <br />Instalation</p>
@@ -33,13 +40,19 @@
             <ion-icon name="logo-twitter"></ion-icon>
           </div>
         </div>
-        <div class="ellipse-shapes"></div>
+        <div
+          class="ellipse-shapes"
+          data-aos="fade-right"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="2000"
+        ></div>
       </div>
     </section>
 
     <section class="aboutme-sec">
       <div class="about-me-container">
-        <div class="mid-text">
+        <div class="mid-text" data-aos="zoom-out-down" data-aos-duration="2000">
           <h1>Rizki Suputro</h1>
           <h2>Web Designer & Software Installation</h2>
           <hr
@@ -53,10 +66,18 @@
           />
         </div>
         <div class="aboutme-content">
-          <h2>About Me</h2>
+          <h2 data-aos="zoom-out-up" data-aos-duration="1500">About Me</h2>
           <div class="aboutme-fill-content">
-            <div class="ellipse-shapes ellipse2"></div>
-            <div class="information-text">
+            <div
+              class="ellipse-shapes ellipse2"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            ></div>
+            <div
+              class="information-text"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <p>
                 Lulusan baru di bidang Komputer dan Jaringan dengan pengalaman
                 sebagai IT Support. Terbiasa menangani instalasi sistem operasi,
@@ -71,49 +92,239 @@
             </div>
           </div>
           <div class="icon-status">
-            <div class="status-content status">
+            <div
+              class="status-content status"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+            >
               <ion-icon name="person-circle-outline"></ion-icon>
               <h3>STATUS</h3>
               <h5>Fresh Graduated</h5>
             </div>
-            <div class="status-content available-for">
+            <div
+              class="status-content available-for"
+              data-aos="zoom-out"
+              data-aos-duration="1500"
+            >
               <ion-icon name="bag-remove-sharp"></ion-icon>
               <h3>Available For</h3>
               <h5>Work</h5>
             </div>
-            <div class="status-content speciality">
+            <div
+              class="status-content speciality"
+              data-aos="zoom-out"
+              data-aos-duration="2000"
+            >
               <ion-icon name="code-slash-sharp"></ion-icon>
               <h3>speciality</h3>
               <h5>Software Installation</h5>
             </div>
-            <div class="status-content experience">
+            <div
+              class="status-content experience"
+              data-aos="zoom-out"
+              data-aos-duration="2500"
+            >
               <ion-icon name="time-sharp"></ion-icon>
               <h3>Experience</h3>
               <h5>4 Month</h5>
             </div>
           </div>
           <div class="myskill-content">
-            <h3>My Skill</h3>
+            <h3 data-aos="fade-right" data-aos-duration="1000">My Skill</h3>
             <div class="skill-wrap">
-              <div class="skill-content html-skill">
+              <div
+                class="skill-content html-skill"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
                 <ion-icon name="logo-html5"></ion-icon>
                 HTML
               </div>
-              <div class="skill-content css-skill">
+              <div
+                class="skill-content css-skill"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
                 <ion-icon name="logo-css3"></ion-icon>
                 CSS
               </div>
-              <div class="skill-content git-skill">
+              <div
+                class="skill-content git-skill"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
                 <ion-icon name="git-branch-sharp"></ion-icon>
                 GIT
+              </div>
+            </div>
+          </div>
+          <div class="certification-sec">
+            <h3 data-aos="fade-right" data-aos-duration="1000">
+              Certification
+            </h3>
+            <div
+              class="certification-content"
+              data-aos="zoom-out-down"
+              data-aos-duration="1500"
+            >
+              <div class="certification-card algoritma-certificate">
+                <div class="card-content">
+                  <ion-icon name="code-slash"></ion-icon>
+                  <div class="certificate-information">
+                    <h3>
+                      Sertifikat Kelas Algoritma dan <br />
+                      Pemrograman Dasar
+                    </h3>
+                    <h5>CodePolitan</h5>
+                    <p>Diterbitkan Mei 2025 Kedaluwarsa Mei 2028</p>
+                  </div>
+                  <div class="link-certificate">
+                    <a href=""
+                      ><ion-icon name="chevron-forward-circle-sharp"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- sertikiasi mahir text editor -->
+              <div class="certification-card texteditor-certificate">
+                <div class="card-content">
+                  <ion-icon name="code-slash"></ion-icon>
+                  <div class="certificate-information">
+                    <h3 style="font-size: 18px">
+                      Sertifikat Kelas Mahir Menggunakan <br />
+                      Text Editor buat Pemula
+                    </h3>
+                    <h5>CodePolitan</h5>
+                    <p>Diterbitkan Mei 2025 Kedaluwarsa Mei 2028</p>
+                  </div>
+                  <div class="link-certificate">
+                    <a href=""
+                      ><ion-icon name="chevron-forward-circle-sharp"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- sertifikasi cmd development -->
+              <div class="certification-card cmddevelopment-certificate">
+                <div class="card-content">
+                  <ion-icon name="code-slash"></ion-icon>
+                  <div class="certificate-information">
+                    <h3 style="font-size: 16px">
+                      Sertifikat Kelas Belajar Menggunakan <br />
+                      Terminal atau CMD Untuk Development
+                    </h3>
+                    <h5>CodePolitan</h5>
+                    <p>Diterbitkan Mei 2025 Kedaluwarsa Mei 2028</p>
+                  </div>
+                  <div class="link-certificate">
+                    <a href=""
+                      ><ion-icon name="chevron-forward-circle-sharp"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- sertifikasi mengenal program komputer -->
+              <div class="certification-card programkomputer-certificate">
+                <div class="card-content">
+                  <ion-icon name="code-slash"></ion-icon>
+                  <div class="certificate-information">
+                    <h3 style="font-size: 18px">
+                      Sertifikat Kelas Mengenal <br />
+                      Pemrograman Komputer
+                    </h3>
+                    <h5>CodePolitan</h5>
+                    <p>Diterbitkan Mei 2025 Kedaluwarsa Mei 2028</p>
+                  </div>
+                  <div class="link-certificate">
+                    <a href=""
+                      ><ion-icon name="chevron-forward-circle-sharp"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- sertifikasi belajar git pemula -->
+              <div class="certification-card gitpemula-certificate">
+                <div class="card-content">
+                  <ion-icon name="code-slash"></ion-icon>
+                  <div class="certificate-information">
+                    <h3>
+                      Sertifikat Kelas Belajar Git <br />
+                      Pemula
+                    </h3>
+                    <h5>CodePolitan</h5>
+                    <p>Diterbitkan Mei 2025 Kedaluwarsa Mei 2028</p>
+                  </div>
+                  <div class="link-certificate">
+                    <a href=""
+                      ><ion-icon name="chevron-forward-circle-sharp"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- sertifikasi belajar git lanjutan -->
+              <div class="certification-card gitlanjutan-certificate">
+                <div class="card-content">
+                  <ion-icon name="code-slash"></ion-icon>
+                  <div class="certificate-information">
+                    <h3>
+                      Sertifikat Kelas Belajar Git <br />
+                      Lanjutan
+                    </h3>
+                    <h5>CodePolitan</h5>
+                    <p>Diterbitkan Mei 2025 Kedaluwarsa Mei 2028</p>
+                  </div>
+                  <div class="link-certificate">
+                    <a href=""
+                      ><ion-icon name="chevron-forward-circle-sharp"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- sertifikasi belajar html -->
+              <div class="certification-card dasarhtml-certificate">
+                <div class="card-content">
+                  <ion-icon name="code-slash"></ion-icon>
+                  <div class="certificate-information">
+                    <h3>
+                      Sertifikat Kelas Belajar <br />
+                      Dasar HTML
+                    </h3>
+                    <h5>CodePolitan</h5>
+                    <p>Diterbitkan Mei 2025 Kedaluwarsa Mei 2028</p>
+                  </div>
+                  <div class="link-certificate">
+                    <a href=""
+                      ><ion-icon name="chevron-forward-circle-sharp"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- sertifikasi belajar css -->
+              <div class="certification-card dasarcss-certificate">
+                <div class="card-content">
+                  <ion-icon name="code-slash"></ion-icon>
+                  <div class="certificate-information">
+                    <h3>
+                      Sertifikat Kelas Belajar <br />
+                      Dasar CSS
+                    </h3>
+                    <h5>CodePolitan</h5>
+                    <p>Diterbitkan Mei 2025 Kedaluwarsa Mei 2028</p>
+                  </div>
+                  <div class="link-certificate">
+                    <a href=""
+                      ><ion-icon name="chevron-forward-circle-sharp"></ion-icon
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    aaass
 
+    <!-- ion icons -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -122,5 +333,10 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- data aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
