@@ -54,6 +54,7 @@ a {
   width: 100%;
   height: 80vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 15%;
   align-items: center;
@@ -136,6 +137,7 @@ a {
 .aboutme-fill-content {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 5rem;
@@ -155,7 +157,7 @@ a {
 .icon-status {
   margin-top: 5%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -194,6 +196,7 @@ a {
 }
 .skill-wrap {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1rem;
   padding-left: 13%;
@@ -278,6 +281,59 @@ a {
 
 @media screen and (min-width: 365px) and (max-width: 815px) {
   .first-content-page {
-    display: block;
+    margin-top: 2rem;
+  }
+  .first-content-page h3 {
+    font-family: 20px;
+  }
+  .icons {
+    justify-content: center;
+  }
+  /* aboutme sectuin */
+  .aboutme-sec {
+    margin-top: 20rem;
+  }
+  .information-text {
+    max-width: 80%;
+  }
+  .information-text p {
+    font-size: 15px;
+  }
+  .ellipse-shapes {
+    width: 30vh;
+    height: 30vh;
+  }
+  .text-content {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .icon-status {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  .status-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* skill content */
+  .myskill-content h3 {
+    padding-left: 5%;
+  }
+  .skill-wrap {
+    gap: 0.5rem;
+    padding-left: 10%;
+  }
+  .skill-content {
+    width: 30%;
+  }
+  /* certification */
+  .certification-sec {
+    padding-left: 5%;
+  }
+  .certification-card h3 {
+    font-size: 15px;
   }
 }
