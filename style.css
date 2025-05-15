@@ -148,12 +148,13 @@ a {
   line-height: 1.5;
   color: #746d6d;
 }
+/* status style */
 .icon-status {
   margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
 }
 .status-content {
   width: 20%;
@@ -178,6 +179,47 @@ a {
 .status-content h5 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+/* my skill */
+.myskill-content {
+  margin-top: 2rem;
+}
+.myskill-content h3 {
+  font-size: 26px;
+  padding-left: 13%;
+  font-family: "Poppins", serif;
+}
+.skill-wrap {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-left: 13%;
+}
+.skill-content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 5vh;
+  background-color: red;
+  border-radius: 10rem;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+}
+.skill-content ion-icon {
+  padding: 1rem;
+}
+.html-skill {
+  background-color: #feb38a;
+  color: #e65100;
+}
+.css-skill {
+  background-color: #4281ff;
+  color: #1a66b8;
+}
+.git-skill {
+  background-color: #ff8340;
+  color: #e65100;
 }
 @media screen and (min-width: 365px) and (max-width: 815px) {
   .first-content-page {
