@@ -9,20 +9,23 @@
   <body>
     <nav>
       <h1>Porter Media</h1>
-      <div class="navlinks">
+      <div class="navlinks" id="nav-links">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Certification</a></li>
-          <div class="btn-nav">
+          <li><a href="#targetlink-home">Home</a></li>
+          <li><a href="#targetlink-aboutme">About</a></li>
+          <li><a href="#targetlink-certification">Certification</a></li>
+          <div class="btn-nav" onclick="navBtn()">
             <button>Contact Me</button>
           </div>
         </ul>
       </div>
+      <div class="icon-nav-link" id="icon-links">
+        <ion-icon name="list"></ion-icon>
+      </div>
     </nav>
 
     <section class="first-content-page">
-      <div class="first-content-page">
+      <div class="first-content-page" id="targetlink-home">
         <div
           class="text-content"
           data-aos="fade-left"
@@ -52,7 +55,12 @@
 
     <section class="aboutme-sec">
       <div class="about-me-container">
-        <div class="mid-text" data-aos="zoom-out-down" data-aos-duration="2000">
+        <div
+          id="targetlink-aboutme"
+          class="mid-text"
+          data-aos="zoom-out-down"
+          data-aos-duration="2000"
+        >
           <h1>Rizki Suputro</h1>
           <h2>Web Designer & Software Installation</h2>
           <hr
@@ -158,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="certification-sec">
+          <div class="certification-sec" id="targetlink-certification">
             <h3 data-aos="fade-right" data-aos-duration="1000">
               Certification
             </h3>
@@ -325,7 +333,7 @@
     </section>
 
     <section class="getin-sec">
-      <h1>Get In Touch</h1>
+      <h1 id="targetlink-contactme">Get In Touch</h1>
       <div class="getin-content">
         <div class="information-contact">
           <div class="contact contact-email">
@@ -359,6 +367,28 @@
       </div>
     </section>
 
+    <footer>
+      <div class="footer-sec">
+        <div class="social-media">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+        <div class="nav-bottom">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Certification</a>
+          <a href="#">Contact Me</a>
+        </div>
+        <hr
+          style="height: 3px; color: gray; background-color: gray"
+          width="120%"
+        />
+        <h3>COPYRIGHT ©2025 | PorterMedia</h3>
+      </div>
+    </footer>
+
     <!-- ion icons -->
     <script
       type="module"
@@ -373,5 +403,7 @@
     <script>
       AOS.init();
     </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
